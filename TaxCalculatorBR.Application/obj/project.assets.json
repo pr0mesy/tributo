@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "TaxCalculatorBR.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TaxCalculatorBR.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaxCalculatorBR.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TaxCalculatorBR.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TaxCalculatorBR.Domain/TaxCalculatorBR.Domain.csproj",
+      "msbuildProject": "../TaxCalculatorBR.Domain/TaxCalculatorBR.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "TaxCalculatorBR.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/promesy/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/promesy/RiderProjects/TaxCalculatorBR/TaxCalculatorBR.Domain/TaxCalculatorBR.Domain.csproj": {
+              "projectPath": "/home/promesy/RiderProjects/TaxCalculatorBR/TaxCalculatorBR.Domain/TaxCalculatorBR.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
