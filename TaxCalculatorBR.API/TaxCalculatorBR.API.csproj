@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TaxCalculatorBR.Domain\TaxCalculatorBR.Domain.csproj" />
+    <ProjectReference Include="..\TaxCalculatorBR.Application\TaxCalculatorBR.Application.csproj" />
+    <ProjectReference Include="..\TaxCalculatorBR.Infrastructure\TaxCalculatorBR.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
