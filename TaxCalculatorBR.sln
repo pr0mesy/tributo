@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculatorBR.API", "TaxCalculatorBR.API\TaxCalculatorBR.API.csproj", "{7F5BFBBA-34E3-4CE1-89DC-574C989D9A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculatorBR.Domain", "TaxCalculatorBR.Domain\TaxCalculatorBR.Domain.csproj", "{92C5C88E-B132-46D0-A119-159DE09BB5D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculatorBR.Application", "TaxCalculatorBR.Application\TaxCalculatorBR.Application.csproj", "{DE1FA666-C684-4407-B5CA-28C51E97F8ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculatorBR.Infrastructure", "TaxCalculatorBR.Infrastructure\TaxCalculatorBR.Infrastructure.csproj", "{7E8B3B4D-CE7E-4490-88E6-ED262458AAF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculatorBR.Tests", "TaxCalculatorBR.Tests\TaxCalculatorBR.Tests.csproj", "{C3E51924-2B7E-4791-AC63-97856108349C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F5BFBBA-34E3-4CE1-89DC-574C989D9A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5BFBBA-34E3-4CE1-89DC-574C989D9A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5BFBBA-34E3-4CE1-89DC-574C989D9A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5BFBBA-34E3-4CE1-89DC-574C989D9A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C5C88E-B132-46D0-A119-159DE09BB5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C5C88E-B132-46D0-A119-159DE09BB5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C5C88E-B132-46D0-A119-159DE09BB5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C5C88E-B132-46D0-A119-159DE09BB5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1FA666-C684-4407-B5CA-28C51E97F8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1FA666-C684-4407-B5CA-28C51E97F8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1FA666-C684-4407-B5CA-28C51E97F8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1FA666-C684-4407-B5CA-28C51E97F8ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8B3B4D-CE7E-4490-88E6-ED262458AAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8B3B4D-CE7E-4490-88E6-ED262458AAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8B3B4D-CE7E-4490-88E6-ED262458AAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8B3B4D-CE7E-4490-88E6-ED262458AAF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E51924-2B7E-4791-AC63-97856108349C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E51924-2B7E-4791-AC63-97856108349C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E51924-2B7E-4791-AC63-97856108349C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E51924-2B7E-4791-AC63-97856108349C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
