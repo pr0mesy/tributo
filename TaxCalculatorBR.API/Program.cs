@@ -43,6 +43,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseDefaultFiles();   // serve index.html automaticamente na raiz
+app.UseStaticFiles();    // serve os arquivos da pasta wwwroot
 app.UseCors();
 app.UseHttpsRedirection();
 app.MapControllers();
