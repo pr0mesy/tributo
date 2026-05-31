@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaxCalc BR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<main>
+    <header>
+        <span class="badge">Brasil · 2026</span>
+        <h1>Calculadora<br /><em>de Impostos</em></h1>
+        <p class="subtitle">ICMS · ISS · IPI calculados com alíquotas reais por estado.</p>
+    </header>
+
+    <form id="tax-form" autocomplete="off">
+
+        <section class="card">
+            <label class="section-label">Produto</label>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="productName">Nome</label>
+                    <input type="text" id="productName" placeholder="ex: Notebook Dell" required />
+                </div>
+                <div class="field field--small">
+                    <label for="price">Valor (R$)</label>
+                    <input type="number" id="price" placeholder="5000" min="0" step="0.01" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Tipo</label>
+                <div class="type-pills">
+                    <input type="radio" name="type" id="type-product" value="0" checked />
+                    <label for="type-product" class="pill">Produto</label>
+
+                    <input type="radio" name="type" id="type-service" value="1" />
+                    <label for="type-service" class="pill">Serviço</label>
+
+                    <input type="radio" name="type" id="type-industrial" value="2" />
+                    <label for="type-industrial" class="pill">Industrializado</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <label class="section-label">Operação</label>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="originState">Estado de Origem</label>
+                    <select id="originState" required></select>
+                </div>
+                <div class="arrow-between">→</div>
+                <div class="field">
+                    <label for="destinationState">Estado de Destino</label>
+                    <select id="destinationState" required></select>
+                </div>
+            </div>
+        </section>
+
+        <button type="submit" id="calc-btn">
+            <span class="btn-text">Calcular impostos</span>
+            <span class="btn-icon">↗</span>
+        </button>
+
+    </form>
+
+    <section id="result" class="result hidden">
+        <div class="result-header">
+            <span class="result-route" id="result-route"></span>
+            <span class="result-product" id="result-product"></span>
+        </div>
+
+        <div class="breakdown">
+            <div class="breakdown-item" id="row-icms">
+                <span class="tax-name">ICMS</span>
+                <span class="tax-bar-wrap"><span class="tax-bar" id="bar-icms"></span></span>
+                <span class="tax-value" id="val-icms"></span>
+            </div>
+            <div class="breakdown-item" id="row-iss">
+                <span class="tax-name">ISS</span>
+                <span class="tax-bar-wrap"><span class="tax-bar" id="bar-iss"></span></span>
+                <span class="tax-value" id="val-iss"></span>
+            </div>
+            <div class="breakdown-item" id="row-ipi">
+                <span class="tax-name">IPI</span>
+                <span class="tax-bar-wrap"><span class="tax-bar" id="bar-ipi"></span></span>
+                <span class="tax-value" id="val-ipi"></span>
+            </div>
+        </div>
+
+        <div class="totals">
+            <div class="total-row">
+                <span>Total de impostos</span>
+                <span id="val-total-tax"></span>
+            </div>
+            <div class="total-row total-row--final">
+                <span>Preço final</span>
+                <span id="val-final-price"></span>
+            </div>
+        </div>
+    </section>
+
+    <div id="error-msg" class="error hidden"></div>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
