@@ -108,7 +108,7 @@ Isso cria o banco de dados, a tabela `Aliquotas` e insere todas as alíquotas de
 ### 4. Execute a API
 
 ```bash
-dotnet run --project TaxCalculatorBR.API
+dotnet run
 ```
 
 Acesse [http://localhost:5022](http://localhost:5022) para abrir o frontend.  
